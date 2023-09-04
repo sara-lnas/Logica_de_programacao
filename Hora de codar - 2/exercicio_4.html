@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+
+<script>
+
+// 4. Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+
+   var numero1 = parseInt(prompt("Ditgite o primeiro número: "));
+   var numero2 = parseInt(prompt("Digite o segundo numero: "));
+   var numero3 = parseInt(prompt("Digite o terceiro número: "));
+
+   if (numero1 < numero2 && numero1 < numero3) {
+    document.write("A soma dos dois maiores números é: "+ (numero2 + numero3));
+    
+   }else if (numero2 < numero3 && numero2 < numero1){
+    document.write("A soma dos dois maiores números é: "+ (numero1 + numero3));
+
+    }else {
+    document.write("A soma dos dois maiores números é: "+ (numero1 + numero2));
+  }
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

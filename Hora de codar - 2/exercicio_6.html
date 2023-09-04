@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+
+<script>
+
+/* 6. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, 
+o último e o maior de todos eles (considere que todos os números informados serão diferentes)*/
+
+  var num1 = parseInt(prompt("Informe o primeiro valor: "));
+  var num2 = parseInt(prompt("Informe o segundo valor: "));
+  var num3 = parseInt(prompt("Informe o terceiro valor: "));
+  var num4 = parseInt(prompt("Informe o quarto valor: "));
+
+  if (num1 !== num2 && num1 !== num3 && num1 !== num4 && num2 !== num3 && num2 !== num4 && num3 !== num4) {
+  var maiorValor = Math.max(num1, num2, num3, num4);
+
+  document.write("Primeiro valor: " +  num1);
+  document.write("Último valor: " +  num4);
+  document.write("Maior valor: " +  maiorValor);
+
+ } else {
+  document.white("Os valores informados não são todos diferentes. Tente novamente.");
+}
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

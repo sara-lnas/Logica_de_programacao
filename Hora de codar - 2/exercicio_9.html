@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+
+<script>
+
+/*9. Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou 
+não votar este ano (não é necessário considerar o mês em que ela nasceu).*/
+
+  var anoNasc = parseInt(prompt("Informe o ano do seu nascimento: "));
+  var anoAtual = parseInt(prompt("Informe o ano atual: "));
+  var idade = anoAtual - anoNasc;
+
+  if (idade >= 18){
+    document.write("Você já pode votar");
+
+  }else if (idade >= 16 && idade < 18){
+    document.write("O seu voto é facultativo");
+    
+  } else{
+    document.write("Você não pode votar ainda")
+  }
+  
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
