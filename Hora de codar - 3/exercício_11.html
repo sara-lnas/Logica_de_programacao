@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+
+<script>
+
+/*11 - Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre 
+os números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo.*/$
+
+    var dentro = 0;
+    var fora = 0;
+
+    for (var i = 1; i <= 10; i ++) {
+    var v = parseInt(prompt(`Digite o valor ${i}:`));
+    
+     if (v >= 24 && v <= 42) {
+      dentro ++;
+      
+     } else {
+      fora ++;
+     }
+    }
+
+    document.write(`Esses são os números dentro: ${dentro}`);
+    document.write("<br>");
+    document.write(`Esses são os números que estão fora: ${fora}`);
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
